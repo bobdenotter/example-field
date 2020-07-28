@@ -26,7 +26,7 @@
     "extra": {
         "entrypoint": "Bobdenotter\\ExampleField\\Extension",
         "screenshots": [
-            "screenshots/notices.png"
+            "screenshots/example-field.png"
         ]
     }
 }

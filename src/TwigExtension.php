@@ -1,9 +1,9 @@
 <?php
 
+declare(strict_types=1);
 
 namespace Bobdenotter\ExampleField;
 
-use Bobdenotter\ExampleField\Extension;
 use Bolt\Common\Json;
 use Bolt\Extension\ExtensionRegistry;
 use Twig\Extension\AbstractExtension;
@@ -35,6 +35,6 @@ class TwigExtension extends AbstractExtension
         $extension = $this->registry->getExtension(Extension::class);
         $config = $extension->getConfig();
 
-        return Json::json_encode($config, JSON_HEX_QUOT|JSON_HEX_APOS);
+        return Json::json_encode($config, JSON_HEX_QUOT | JSON_HEX_APOS);
     }
 }

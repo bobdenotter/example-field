@@ -1,12 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Bobdenotter\ExampleField;
 
 use Bolt\Widget\BaseWidget;
 use Bolt\Widget\Injector\RequestZone;
 use Bolt\Widget\Injector\Target;
 use Bolt\Widget\TwigAwareInterface;
-use Webmozart\PathUtil\Path;
 
 class ExampleFieldInjectorWidget extends BaseWidget implements TwigAwareInterface
 {

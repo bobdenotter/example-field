@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 
 namespace Bobdenotter\ExampleField;
 
@@ -15,4 +16,3 @@ class ExampleField extends Field implements Excerptable, FieldInterface
 {
     public const TYPE = 'example-field';
 }
-
