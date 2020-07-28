@@ -7,7 +7,7 @@ ContentTypes, as defined in `contenttypes.yaml`
 composer require bobdenotter/example-field 
 ```
 
-It's nof particularly useful in and of itself, but it can be used as a 
+It's not particularly useful in and of itself, but it can be used as a 
 boilerplate to build your own Field type extensions on.
 
 -------

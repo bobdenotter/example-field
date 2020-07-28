@@ -1,0 +1,19 @@
+{% extends '@bolt/_partials/fields/_base.html.twig' %}
+
+
+{% block field %}
+
+    <p class="example-field">
+        This is the example field. Fork it, and create your own!
+    </p>
+
+    <textarea type="text" class="form-control" name="{{ name }}" id="{{ id }}">{{ value }}</textarea>
+
+    <p>
+        It even has some configuration. See the JSON here, or check the output in the Debug toolbar.
+        <small>(it's added in <code>injector.html.twig</code>!)</small>
+    </p>
+
+    <code>{{ example_field_json() }}</code>
+
+{% endblock %}

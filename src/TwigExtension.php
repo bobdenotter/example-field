@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Bolt\Redactor;
+namespace Bobdenotter\ExampleField;
 
 use Bobdenotter\ExampleField\Extension;
 use Bolt\Common\Json;

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Bolt\Redactor;
+namespace Bobdenotter\ExampleField;
 
 use Bolt\Entity\Field;
 use Bolt\Entity\Field\Excerptable;

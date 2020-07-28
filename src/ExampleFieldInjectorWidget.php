@@ -1,6 +1,6 @@
 <?php
 
-namespace Bolt\Redactor;
+namespace Bobdenotter\ExampleField;
 
 use Bolt\Widget\BaseWidget;
 use Bolt\Widget\Injector\RequestZone;
