@@ -11,8 +11,8 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity
  */
-class RedactorField extends Field implements Excerptable, FieldInterface
+class ExampleField extends Field implements Excerptable, FieldInterface
 {
-    public const TYPE = 'redactor';
+    public const TYPE = 'example-field';
 }
 

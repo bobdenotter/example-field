@@ -1,6 +1,6 @@
 {
-    "name": "bolt/redactor",
-    "description": "📝 Bolt Extension to add the Redactor FieldType",
+    "name": "bobdenotter/example-field",
+    "description": "📝 Bolt Extension to add the 'Example Field' FieldType",
     "type": "bolt-extension",
     "license": "MIT",
     "authors": [
@@ -18,13 +18,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Bolt\\Redactor\\": "src/"
+            "Bobdenotter\\ExampleField\\": "src/"
         }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
-        "entrypoint": "Bolt\\Redactor\\Extension",
+        "entrypoint": "Bobdenotter\\ExampleField\\Extension",
         "screenshots": [
             "screenshots/notices.png"
         ]

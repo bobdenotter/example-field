@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Bolt\Redactor;
+namespace Bobdenotter\ExampleField;
 
 use Bolt\Extension\BaseExtension;
 use Symfony\Component\Filesystem\Filesystem;
@@ -11,13 +11,13 @@ class Extension extends BaseExtension
 {
     public function getName(): string
     {
-        return 'Bolt Extension to add the Redactor FieldType';
+        return 'Extension to add the \'Example Field\' FieldType';
     }
 
     public function initialize(): void
     {
-        $this->addTwigNamespace('redactor');
-        $this->addWidget(new RedactorInjectorWidget());
+        $this->addTwigNamespace('example-field');
+        $this->addWidget(new ExampleFieldInjectorWidget());
     }
 
     public function install(): void

@@ -1,12 +1,14 @@
-# 📝 Bolt Redactor Extension
+# 📝 Bolt Example Field Extension
 
-This extension allows you to use fields of `type: redactor` in your 
+This extension allows you to use fields of `type: example-field` in your 
 ContentTypes, as defined in `contenttypes.yaml`
 
 ```bash
-composer require bolt/redactor 
+composer require bobdenotter/example-field 
 ```
 
+It's nof particularly useful in and of itself, but it can be used as a 
+boilerplate to build your own Field type extensions on.
 
 -------
 

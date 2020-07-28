@@ -3,12 +3,16 @@
 
 {% block field %}
 
+    <span class="example-field">
+        This is the example field. Fork it, and create your own!
+    </span>
+
     <textarea type="text" name="{{ name }}" id="{{ id }}" value="{{ value }}"></textarea>
 
-    <script>
-        window.setTimeout(function() {
-            $R('#{{ id }}', {{ redactor_settings() }});
-        }, 50);
-    </script>
+    <p>It even has some configuration. See the JSON here, or check the output in the Debug toolbar</p>
+
+    <pre>{{ example_field_settings }}</pre>
+
+    {{ dump(example-field-config) }}
 
 {% endblock %}

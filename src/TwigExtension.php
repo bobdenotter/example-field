@@ -3,6 +3,7 @@
 
 namespace Bolt\Redactor;
 
+use Bobdenotter\ExampleField\Extension;
 use Bolt\Common\Json;
 use Bolt\Extension\ExtensionRegistry;
 use Twig\Extension\AbstractExtension;
@@ -25,15 +26,15 @@ class TwigExtension extends AbstractExtension
         ];
 
         return [
-            new TwigFunction('redactor_settings', [$this, 'redactorSettings'], $safe),
+            new TwigFunction('example_field_json', [$this, 'exampleFieldJson'], $safe),
         ];
     }
 
-    public function redactorSettings(): string
+    public function exampleFieldJson(): string
     {
         $extension = $this->registry->getExtension(Extension::class);
         $config = $extension->getConfig();
 
-        return Json::json_encode($config['default'], JSON_HEX_QUOT|JSON_HEX_APOS);
+        return Json::json_encode($config, JSON_HEX_QUOT|JSON_HEX_APOS);
     }
 }
